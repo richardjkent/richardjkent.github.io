@@ -4853,13 +4853,15 @@ input, select, textarea {
    Services Card Grid
 =========================== */
 
-.service-tab .posts {
+.service-tab section.posts {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem;
 }
 
-
+.service-tab section.posts article {
+	width: auto;
+}
 /* Make cards fill their grid space */
 
 .service-tab .posts article {
