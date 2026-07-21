@@ -4688,83 +4688,137 @@ input, select, textarea {
 
 	}
 
+/* ===========================
+   Services Page
+=========================== */
 
+.tabs {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin: 2rem 0 3rem;
+	flex-wrap: wrap;
+}
 
-/* -------------------------------
-   Services Cards
--------------------------------- */
+.tab-button {
+	min-width: 280px;
+	text-align: center;
+}
 
-.service-tab .posts article{
+.service-tab {
+	margin-top: 2rem;
+}
 
-    background:#ffffff;
+/* Service Cards */
 
-    border:1px solid #dcdcdc;
+.service-tab .posts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
 
-    border-radius:8px;
+.service-tab .posts article {
 
-    padding:2rem;
+	background: #ffffff;
 
-    box-shadow:0 4px 12px rgba(0,0,0,.06);
+	border: 1px solid #d8d8d8;
 
-    transition:.25s;
+	border-radius: 10px;
+
+	padding: 2rem;
+
+	box-shadow: 0 6px 18px rgba(0,0,0,.08);
+
+	transition: all .25s ease;
 
 }
 
+.service-tab .posts article:hover {
 
-.service-tab .posts article:hover{
+	transform: translateY(-6px);
 
-    transform:translateY(-5px);
-
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-
-}
-
-
-.service-tab .posts article h2{
-
-    font-size:1.25rem;
-
-    margin-bottom:1rem;
+	box-shadow: 0 12px 28px rgba(0,0,0,.14);
 
 }
 
+.service-tab article header {
+	margin-bottom: 1rem;
+}
 
-.service-tab .posts article p{
+.service-tab article h2 {
 
-    min-height:150px;
+	font-size: 1.35rem;
+
+	line-height: 1.4;
+
+	margin-bottom: .75rem;
 
 }
 
+.service-tab article p {
 
-.service-tab .posts article .button.small{
+	font-size: 0.95rem;
 
-    margin:.2rem;
+	line-height: 1.8;
 
-}
+	margin-bottom: 1.5rem;
 
-.tabs{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:15px;
-
-    margin-bottom:40px;
+	min-height: 160px;
 
 }
 
+.service-tab .actions.special {
 
-.tab-button{
+	display: flex;
 
-    min-width:280px;
+	flex-wrap: wrap;
+
+	justify-content: flex-start;
+
+	gap: .5rem;
+
+	margin-top: auto;
 
 }
 
+.service-tab .button.small {
 
-.tab-button.primary{
+	font-size: .7rem;
 
-    background:#1f2d3d;
+	padding: .45rem .9rem;
+
+	border-radius: 20px;
 
 }
 
+/* ===========================
+   Service Tags
+=========================== */
+
+.service-tab .actions.special {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 0.5rem;
+	margin-top: 1.5rem;
+}
+
+.service-tab .actions.special li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.service-tab .button.small {
+	background: #eef2f5;
+	border: none;
+	color: #495057;
+	font-size: 0.75rem;
+	font-weight: 600;
+	border-radius: 20px;
+	padding: 0.35rem 0.9rem;
+	text-transform: none;
+	letter-spacing: 0;
+	pointer-events: none;
+	box-shadow: none;
+}
