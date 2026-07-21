@@ -4822,3 +4822,24 @@ input, select, textarea {
 	pointer-events: none;
 	box-shadow: none;
 }
+/* ===========================
+   Service Card Accent
+=========================== */
+
+.service-card {
+	position: relative;
+}
+
+.service-card::before {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 4px;
+	background: #2f6f91;
+	border-radius: 2px;
+	margin-bottom: 1.5rem;
+}
+
+.service-card h2 {
+	margin-top: 0;
+}
