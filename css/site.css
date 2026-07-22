@@ -516,12 +516,17 @@ img {
 	}
 
 	.about-preview-image {
-		order: -1;
-	}
+    display: flex;
+    justify-content: center;
+}
 
-	.about-preview-image img {
-		max-width: 480px;
-		margin: 0 auto;
-	}
+.about-preview-image img {
+    width: 75%;
+    max-width: 340px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    box-shadow: 0 16px 38px rgba(29, 41, 34, 0.13);
+}
 
 }
