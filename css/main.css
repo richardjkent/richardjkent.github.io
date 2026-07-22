@@ -4880,11 +4880,6 @@ input, select, textarea {
 
 }
 .about-photo {
-    max-width: 650px;
+    max-width: 450px;
     margin: 0 auto 2.5rem auto;
-}
-
-.about-photo img {
-    width: 100%;
-    display: block;
 }
