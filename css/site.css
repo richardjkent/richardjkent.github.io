@@ -1220,17 +1220,15 @@ img {
 }
 
 .contact-cancel {
-	padding: 12px 18px;
-	color: var(--muted);
+	color: var(--sage);
 	background: transparent;
-	border: 0;
-	font: inherit;
-	font-weight: 700;
+	border: 1px solid var(--sage);
 	cursor: pointer;
 }
 
 .contact-cancel:hover {
-	color: var(--ink);
+	color: #ffffff;
+	background: var(--sage);
 }
 
 .contact-submit {
