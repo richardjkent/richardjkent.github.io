@@ -1137,11 +1137,6 @@ body.modal-open {
 	color: var(--muted);
 }
 
-.contact-form-grid {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 18px;
-}
 
 .contact-field {
 	margin-bottom: 20px;
