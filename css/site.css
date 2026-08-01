@@ -1139,22 +1139,63 @@ img {
 }
 
 .contact-dialog-close {
-	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	width: 42px;
 	height: 42px;
+
 	padding: 0;
-	color: var(--muted);
-	background: rgba(255, 255, 255, 0.65);
-	border: 1px solid rgba(107, 124, 89, 0.22);
+
+	background: rgba(255,255,255,.75);
+	backdrop-filter: blur(8px);
+
+	border: 1px solid rgba(107,124,89,.18);
 	border-radius: 50%;
-	font-size: 1.8rem;
+
+	color: #58694b;
+
+	font-size: 1.5rem;
+	font-weight: 300;
 	line-height: 1;
+
 	cursor: pointer;
+
+	transition:
+		background .2s ease,
+		border-color .2s ease,
+		transform .2s ease,
+		box-shadow .2s ease;
 }
 
 .contact-dialog-close:hover {
-	color: var(--ink);
-	background: #ffffff;
+
+	background: white;
+
+	border-color: var(--sage);
+
+	color: var(--sage);
+
+	transform: rotate(90deg);
+
+	box-shadow: 0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.contact-dialog-close:active {
+
+	transform: rotate(90deg) scale(.95);
+
+}
+
+.contact-dialog-close:focus-visible {
+
+	outline: none;
+
+	box-shadow:
+		0 0 0 4px rgba(107,124,89,.18);
+
 }
 
 .contact-dialog-intro {
